@@ -1,0 +1,28 @@
+try catch:  Utilizar la estructura try catch para preveer errores, pero tener presente que tambien 
+            puedo lanzar mis propios errores dentro del try utilizando throw new Error("mensaje"), para validar datos de entrada por ejemplo.
+
+break, continue:    Pueden utlizarse dentro de ciclos como for y while. En foreach no.
+                    Recordar que la utilidad de continue es que SALTEA la iteracion del ciclo pero sin salir del mismo como si lo hace break.
+
+destructuracion:    Seria como la desenpaquetación de python. 
+                    const numeros = [1,2,3]
+                    const [uno, dos, tres] = numeros
+
+                    Para hacer esto con los objetos los nombres de la variable que pretendo crear deben coincidir con los nombres de las propiedades
+                    del objeto, aunque no pasa nada si los valores no estan ordenados, lo importante es que esten los nombres de todas las propiedades. 
+                    Con un objeto llamado persona, quedaria asi... 
+
+                    const {nombre, apellido, edad} = persona
+            
+objetos literales:  Un objeto literal es una agrupacion de propiedades. Cada propiedad esta compuesta por una llave y un valor.
+                    Cuando la propiedad y su valor en un objeto son nombradas iguales, puedo omitir escribirlas dos veces.
+                    
+                    const perro = {
+                        nombre,
+                        edad,
+                        raza: "Callejero",   //puedo combinar los dos puntos tambien
+                        ladrar() {
+                            console.log("guauu guauu!!!")
+                        }
+                    }
+                
